@@ -1,0 +1,35 @@
+package ulasalle;
+
+import java.io.IOException;
+
+import javax.jdo.PersistenceManager;
+import javax.servlet.http.*;
+
+
+@SuppressWarnings("serial")
+public class SaveProfesor extends HttpServlet {
+	@Override
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		resp.setContentType("text/plain");
+		 
+		String name = req.getParameter("name");
+		String email = req.getParameter("email");
+		boolean estado = Boolean.parseBoolean(req.getParameter("estado"));
+		
+		final PersistenceManager pm = PMF.get().getPersistenceManager();
+		final Profesor p = new Profesor(name, email, estado);
+		
+		try{
+			pm.makePersistent(p);
+			resp.getWriter().println("Persona grabada correctamente.");
+			resp.sendRedirect("/listprofesor");
+		}catch(Exception e){
+			System.out.println(e);
+			resp.getWriter().println("Ocurrió un error, vuelva a intentarlo.");
+			resp.sendRedirect("/JSP/profesor.jsp");
+		}finally{
+			pm.close();
+		}
+	}
+
+}

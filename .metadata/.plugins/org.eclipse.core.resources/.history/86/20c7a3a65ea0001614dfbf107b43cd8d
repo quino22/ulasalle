@@ -1,0 +1,15 @@
+package ulasalle;
+
+import java.io.IOException;
+import javax.servlet.http.*;
+
+@SuppressWarnings("serial")
+public class Quinto extends HttpServlet {
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		resp.setContentType("text/html");
+		resp.getWriter().println("<form name='quinto' method='post'>");
+		resp.getWriter().println("<h1>Pagina </h1>");
+		resp.getWriter().println("<a href='index.html'>Log out</a>");
+		resp.getWriter().println("</form>");
+	}
+}

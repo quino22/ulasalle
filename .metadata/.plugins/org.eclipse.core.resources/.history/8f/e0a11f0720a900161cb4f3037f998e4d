@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html lang="es">
+<head>
+<title>Programación Web con Google App Engine</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="description" content="Ejemplos de proyectos de aplicaciones Web con Google App Engine.">
+<meta name="keywords" content="Google app engine,Servlets,Java,GAE,HTML,CSS,JSP,Eclipse">
+<meta name="author" content="Richart Escobedo (rescobedo)">
+<link rel="icon" type="image/png" href="http://indice-ejemplos.appspot.com/Java-icon.png"> 
+<link rel="stylesheet" type="text/css" href="http://indice-ejemplos.appspot.com/miestilo.css">
+</head>
+<body>
+<!-- Menú de navegación del sitio -->
+<ul class="navbar">
+  <li><a href="/index.html">Regresar...</a>
+  <li><a href="/listcolor">Lista</a>
+</ul>
+
+    
+<form action="savecolor" method="get">
+<fieldset><legend>Registro de color</legend>
+<div id="formulario">
+	<div class="fila">
+		<div class="etiqueta"><label for="name">Nombre :</label></div>
+		<div class="control"><input type="text" name="name" maxlength="10" value="" /></div>
+	</div>
+	
+	<div class="fila">
+		<div class="etiqueta"><label for="email">Email :</label></div>
+		<div class="control"><input type="text" name="name" maxlength="10" value="" /></div>
+	</div>
+	<div class="fila">
+		<div id="action"><input type="reset" value="Limpiar"/><input type="submit" value="Enviar"/></div>
+	</div>
+</div>
+</fieldset>
+</form>
+
+</body>
+</html>

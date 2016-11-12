@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="pw2.*"%>
+<%@ page import="java.util.ArrayList"%>
+<%	ArrayList<Votante> votantes = (ArrayList<Votante>) getServletContext().getAttribute("votantes"); %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Votantes</title>
+</head>
+<body>
+<!-- Menú de navegación del sitio -->
+<ul class="navbar">
+  <li><a href="buscar.html">Buscar</a>
+  <li><a href="registrar.html">Registrar</a>
+  <li><a href="votantes.jsp">Ver</a>
+  <%if( votantes != null   ){%>
+  <li><a href="vaciarServlet">Vaciar</a>
+  <%}%>
+</ul>
+
+
+<form name="editarForm" method="post" action="editarServlet">
+<label>DNI: </label><input type="text" name="dni" value="<%v.getDni()%>" /> <br />
+<label>Nombres: </label><input type="text" name="nombres" value="<%v.getNombres()%>" /> <br />
+<label>Apellidos: </label><input type="text" name="apellidos" value="<%v.getApellidos%>" /> <br />
+<label>Condición: </label><select name="miembro">
+	<option value="True">Sí es miembro de mesa</option>
+	<option value="False" selected="selected">No es miembro de mesa</option>
+</select> <br />
+<input type="text" name="departamento" value="<%v.getDepartamento()%>" /><span>/</span>
+<input type="text" name="provincia" value="<%v.getProvincia()%>" /><span>/</span>
+<input type="text" name="distrito" value="<%v.getDistrito()%>" /> <br />
+<label>Mesa de sufragio: </label><input type="text" name="mesa" value="<%v.getMesa()%>" /> <br />
+<label>Local de votación: </label><input type="text" name="local" value="IE 103 Luis Armando Cabello" /> <br />
+<label>Pabellón: </label><input type="text" name="pabellon" value="200" /> <br />
+<label>Piso: </label><input type="text" name="piso" value="1" /> <br />
+<label>Aula: </label><input type="text" name="aula" value="205" /> <br />
+<a href="#">Ver croquis de tu local de votación</a> <br />
+<label>Dirección: </label><input type="text" name="direccion" value="PSJ Alto de la Alianza SN" /> <br />
+<input type="submit" value="Guardar" />
+</form>
+
+
+<table border="1">
+<%if( votantes != null   ){%>
+	<tr><td>DNI</td><td>Nombres</td><td>Apellidos</td><td>Miembro de mesa</td><td>Departamento/Provincia/Departamento</td><td>Editar</td><td>Eliminar</td></tr>
+	<%for(Votante v : votantes){%>
+	<tr>
+	<td><%=v.getDni()%></td><td><%=v.getNombres()%></td><td><%=v.getApellidos()%></td>
+	<td><%=v.getMiembro()%></td>
+	<td><%=v.getDepartamento()%>/<%=v.getProvincia()%>/<%=v.getDistrito()%></td>
+	<% //System.out.println(v.getDni()+" "+v.getNombres()+" "+v.getApellidos());%>
+	<td><a href="editar.html?dni=<%=v.getDni()%>">Editar</a></td>
+	<td><a href="eliminarServlet?dni=<%=v.getDni()%>">Eliminar</a></td>
+	</tr>
+<%}}else{%>
+	<tr><td>No hay votantes para mostrar.</td></tr>
+<%}%>
+</table>
+
+</body>
+</html>

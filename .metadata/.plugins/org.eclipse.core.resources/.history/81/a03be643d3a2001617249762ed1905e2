@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Registrar votante</h3>
+<form action="/registrar" method="post">
+Nombre: <input type="text" name=nombre"">
+Apellido: <input type="text" name="apellido">
+Miembro: 
+<select>
+	<option value="no">No es miembro de mesa</option>
+	<option value="si">Si en miembro de mesa</option>
+</select>
+Mesa: <input type="text" name="mesa">
+<input type="submit" value="Guargar">
+</form>
+</body>
+</html>

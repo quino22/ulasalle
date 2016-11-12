@@ -1,0 +1,42 @@
+package pw2;
+
+import java.io.IOException;
+import java.util.ArrayList; 
+import javax.servlet.http.*;
+
+@SuppressWarnings("serial")
+public class EditarServlet extends HttpServlet {
+	@SuppressWarnings("unchecked")
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		
+		String dnix = req.getParameter("dnix");
+		
+		String dni = req.getParameter("dni").trim();
+		String nombres = req.getParameter("nombres").trim();
+		String apellidos = req.getParameter("apellidos").trim();
+		boolean miembro = Boolean.parseBoolean(req.getParameter("miembro"));
+		String departamento = req.getParameter("departamento").trim();
+		String provincia = req.getParameter("provincia").trim();
+		String distrito = req.getParameter("distrito").trim();
+		String mesa = req.getParameter("mesa").trim();
+		String local = req.getParameter("local").trim();
+		String pabellon = req.getParameter("pabellon").trim();
+		String piso = req.getParameter("piso").trim();
+		String aula = req.getParameter("aula").trim();
+		String direccion = req.getParameter("direccion").trim();
+		
+		boolean encontro=false;
+		ArrayList<Votante> votantes = (ArrayList<Votante>) getServletContext().getAttribute("votantes");
+		Votante ok= new Votante();
+		for(Votante v : votantes){
+			if(v.getDni().equals(dnix)){
+				encontro = true;
+				ok = v;
+				break;
+			}					
+		}
+		if(encontro){
+			ok.setNombres();
+		}
+	}
+}

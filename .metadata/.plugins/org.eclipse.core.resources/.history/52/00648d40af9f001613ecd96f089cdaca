@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tercero</title>
+</head>
+<body>
+Ingrese mensaje:
+<textarea rows="" cols=""></textarea>
+</body>
+</html>

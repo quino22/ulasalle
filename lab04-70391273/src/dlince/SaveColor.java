@@ -1,0 +1,36 @@
+package dlince;
+
+import java.io.IOException;
+
+import javax.jdo.PersistenceManager;
+import javax.servlet.http.*;
+
+@SuppressWarnings("serial")
+public class SaveColor extends HttpServlet {
+	public void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws IOException {
+		resp.setContentType("text/plain");
+		
+		String name = req.getParameter("name");
+		String email = req.getParameter("email");
+		boolean estado = Boolean.parseBoolean(req.getParameter("estado"));
+		System.out.println("1");
+		
+		final PersistenceManager pm = PMF.get().getPersistenceManager();
+		final Color c = new Color(name, email, estado);
+		try{
+			System.out.println("2");
+			pm.makePersistent(c);
+			resp.getWriter().println("Color grabado correctamente.");
+			resp.sendRedirect("/listcolor");
+		}catch(Exception e){
+			System.out.println(e);
+			System.out.println("3");
+			resp.getWriter().println("Ocurrió un error, vuelva a intentarlo.");
+			resp.sendRedirect("/color.jsp");
+		}finally{
+			System.out.println("4");
+			pm.close();
+		}
+	}
+}

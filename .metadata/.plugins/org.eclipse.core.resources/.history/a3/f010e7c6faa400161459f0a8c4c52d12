@@ -1,0 +1,48 @@
+package pw2;
+
+import java.io.IOException;
+import java.util.ArrayList; 
+import javax.servlet.http.*;
+
+@SuppressWarnings("serial")
+public class EliminarServlet extends HttpServlet {
+	@SuppressWarnings("unchecked")
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		
+		String dnix = req.getParameter("dni");
+		boolean encontro=false;	
+		ArrayList<Votante> votantes = (ArrayList<Votante>) getServletContext().getAttribute("votantes");
+		int i = 0;
+		if( votantes != null ){
+			Votante ok= new Votante();
+			for(Votante v : votantes){
+				if(v.getDni().equals(dnix)){
+					encontro=true;
+					ok = v;
+					i++;
+					break;
+				}					
+			}
+			if(encontro){
+				System.out.println(votantes.get(0).nombres);
+				resp.getWriter().println("<p><Un votante encontrado></p>");
+				resp.getWriter().println("<p>DNI:"+ok.getDni()+".</p>");
+				resp.getWriter().println("<p>Nombres:"+ok.getNombres()+".</p>");
+				resp.getWriter().println("<p>Apellidos:"+ok.getApellidos()+".</p>");
+				if(ok.getMiembro()){
+					resp.getWriter().println("<p>Sí es miembro de mesa.</p>");
+				}else{
+					resp.getWriter().println("<p>No es miembro de mesa.</p>");
+				}
+				resp.getWriter().println("<p>Departamento/Provincia/Distrito:"+ok.getDepartamento()+"/"+ok.getProvincia()+"/"+ok.getDistrito()+".</p>");
+			}else{
+				resp.getWriter().println("<p>No se ha encontrado ningun votante ("+dnix+").");
+			}
+				
+		}else{
+			resp.getWriter().println("<p>No hay donde buscar.</p>");
+		}
+		
+		
+	}
+}

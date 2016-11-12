@@ -1,0 +1,15 @@
+package ulasalle;
+
+public class Votante {
+	String nombre;
+	String dni;
+	String direccion;
+	
+	public Votante(String nombre,String dni,String direccion){
+		this.nombre = nombre;
+		this.dni = dni;
+		this.direccion = direccion;
+	}
+		
+	
+}

@@ -1,0 +1,43 @@
+package ulasalle;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.servlet.http.*;
+
+
+import ulasalle.Votante;
+
+@SuppressWarnings("serial")
+public class Ev3_70391273Servlet extends HttpServlet {
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		resp.setContentType("text/text");
+		int dni = Integer.parseInt(req.getParameter("dni"));
+		
+		Votante v1 = new Votante("Joaquin",	70391273,"urb buenavista","0134","AQP",true);
+		Votante v2 = new Votante("Daniel",	12345678,"Av Ejercito","0121","LIMA",false);
+		Votante v3 = new Votante("Carla",	19876543,"Av Parra","0123","CUZCO",true);
+		
+		ArrayList<Votante> lista = new ArrayList<>();
+		
+		lista.add(v1);
+		lista.add(v2);
+		lista.add(v3);
+		
+		//resp.getWriter().println(lista.get(2).nombre);
+		
+		for(int i = 0; i< lista.size();i++){
+			if(dni == lista.get(i).dni){
+				resp.getWriter().println("Resultado de ONPE");
+				resp.getWriter().println("Bienvenido/a DNI: " + lista.get(i).dni);
+				resp.getWriter().println("Nombre: " + lista.get(i).nombre);
+				resp.getWriter().println("Ciudad: " + lista.get(i).ciudad);
+				resp.getWriter().println("Mesa de sufragio: " + lista.get(i).mesa);
+				resp.getWriter().println("Direccion: " + lista.get(i).direccion);
+			}else{
+				resp.getWriter().println("Verifique el numero de dni");
+				break;
+			}
+		}
+	}
+}

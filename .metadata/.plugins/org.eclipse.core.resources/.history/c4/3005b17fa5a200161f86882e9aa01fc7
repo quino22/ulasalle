@@ -1,0 +1,7 @@
+package ulasalle;
+
+public class Votante {
+	String nombre,apellido;
+	String dni;
+	String direccion;
+}

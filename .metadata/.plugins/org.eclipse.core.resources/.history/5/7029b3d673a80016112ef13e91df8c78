@@ -1,0 +1,37 @@
+package ulasalle;
+
+import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+
+import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.KeyFactory;
+
+import com.google.appengine.datanucleus.annotations.Unowned;
+public class Curso {
+
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	private Key idCurso;
+	
+	@Persistent
+	private String name;
+	
+	@Persistent
+	private String creditos;
+	
+	@Persistent
+	private boolean estado;
+	
+	//@Persistent(mappedBy = "")
+	@Persistent
+	@Unowned
+	private Profesor profesor;
+
+	public Curso(String name, String creditos,boolean estado) {
+		
+	}
+	
+}

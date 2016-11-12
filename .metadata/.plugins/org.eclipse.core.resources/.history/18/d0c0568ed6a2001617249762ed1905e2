@@ -1,0 +1,25 @@
+package ulasalle;
+
+public class Votante {
+	String nombre;
+	String apellido;
+	int dni;
+	String direccion;
+	String ciudad;
+	String mesa;
+	boolean miembro;
+	
+	public Votante(String nombre,String apellido,int dni,String direccion,String  mesa,String ciudad,boolean miembro){
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.dni = dni;
+		this.direccion = direccion;
+		this.mesa = mesa;
+		this.ciudad = ciudad;
+		this.miembro = miembro;
+	}
+	
+	public add()
+		
+	
+}

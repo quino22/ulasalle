@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tercero</title>
+</head>
+<body>
+Ingrese mensaje:<br>
+<textarea rows="4" cols="50"></textarea>
+<input type="submit" value="Enviar">
+</body>
+</html>

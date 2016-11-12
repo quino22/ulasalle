@@ -1,0 +1,69 @@
+package ulasalle;
+
+import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+
+import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.KeyFactory;
+
+@PersistenceCapable(identityType = IdentityType.APPLICATION)
+public class Profesor{
+	
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	private Key idProfesor;
+	
+	@Persistent
+	private String name;
+	
+	@Persistent
+	private String email;
+	
+	@Persistent
+	private boolean estado;
+	
+	public Profesor(String name, String email,boolean estado) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.estado = estado;
+	}
+
+	public String getIdColor() {
+		return KeyFactory.keyToString(idProfesor);
+	}
+
+	public void setIdColor(Key idColor) {
+		this.idColor = idColor;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public boolean isEstado() {
+		return estado;
+	}
+
+	public void setEstado(boolean estado) {
+		this.estado = estado;
+	}
+	
+
+	
+}

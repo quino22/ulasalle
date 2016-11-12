@@ -1,0 +1,43 @@
+package test;
+
+import java.util.ArrayList;
+
+
+public class Tesst {
+	
+	public static String[] myList = {"a", "b","c","d","e","f"};
+	public static String[] myList2 = {"A", "B","C","D","E","F"};
+	
+	ArrayList<ArrayList<String>> data;
+	public static ArrayList<ArrayList<String>> splitList(String[] list,ArrayList<ArrayList<String>> data) {
+
+		data = new ArrayList<ArrayList<String>>();
+	    data.add(new ArrayList<String>());
+	    int outerIndex =0;
+	    int innerIndex =0;
+	    for (int i=0; i<list.length; i++) {
+	        System.out.println("will add: " + list[i]);
+	        data.get(outerIndex).add(innerIndex,list[i]);
+	        innerIndex++;
+	        
+//	        if(!list[i].contains("-")) {
+//	            System.out.println("outerIndex: " + outerIndex +" innerIndex: "+ innerIndex);
+//	            data.get(outerIndex).add(innerIndex, list[i]);
+//	            innerIndex++;
+//	        } else {
+//	            outerIndex++;    // will move to next outerIndex
+//	            innerIndex = 0;  // reset or you will be out of bounds
+//	            if (i != list.length-1) {
+//	                data.add(new ArrayList<String>());  // create an new outer index until your list is empty
+//	            }
+//	            
+//	        }
+	   }
+	    return data;
+	}
+	public static void main(String[] args) {
+		data = new ArrayList<ArrayList<String>>();
+	    System.out.println(splitList(myList,data));
+	}
+
+}

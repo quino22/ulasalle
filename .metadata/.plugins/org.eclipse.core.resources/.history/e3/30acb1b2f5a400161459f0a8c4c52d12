@@ -1,0 +1,12 @@
+package pw2;
+
+import java.io.IOException;
+import javax.servlet.http.*;
+
+@SuppressWarnings("serial")
+public class EliminarServlet extends HttpServlet {
+	@SuppressWarnings("unchecked")
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		
+	}
+}

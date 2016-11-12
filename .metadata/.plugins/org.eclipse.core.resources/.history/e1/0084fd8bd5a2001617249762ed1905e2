@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registrar</title>
+</head>
+<body>
+<h3>Registrar votante</h3>
+<form action="/registrar" method="post">
+Nombre: <input type="text" name="nombre">
+<br><br>
+Apellido: <input type="text" name="apellido">
+<br><br>
+
+Ciudad: 
+<select name="ciudad">
+	<option value="aqp">Arequipa</option>
+	<option value="lima">Lima</option>
+	<option value="cuz">Cuzco</option>
+</select>
+<br><br>
+
+Miembro: 
+<select name="miembro">
+	<option value="no">No es miembro de mesa</option>
+	<option value="si">Si en miembro de mesa</option>
+</select>
+<br><br>
+Mesa: <input type="text" name="mesa">
+<br><br>
+<input type="submit" value="Guargar">
+</form>
+</body>
+</html>

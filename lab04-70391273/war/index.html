@@ -1,0 +1,109 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+<html lang="es">
+<head>
+<title>Programación Web con Google App Engine</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="description" content="Ejemplos de proyectos de aplicaciones Web con Google App Engine.">
+<meta name="keywords" content="Google app engine,Servlets,Java,GAE,HTML,CSS,JSP,Eclipse">
+<meta name="author" content="Richart Escobedo (rescobedo)">
+<link rel="icon" type="image/png" href="http://indice-ejemplos.appspot.com/Java-icon.png"> 
+<link rel="stylesheet" type="text/css" href="http://indice-ejemplos.appspot.com/miestilo.css">
+</head>
+<body>
+<!-- Menú de navegación del sitio -->
+<ul class="navbar">
+  <li><a href="http://indice-ejemplos.appspot.com/">Más ejemplos</a>
+</ul>
+
+<!-- Contenido principal -->
+<h1>Programación Web con Google App Engine</h1>
+<p>¡Bienvenido e este sitio de publicación! Ejemplos de proyectos de aplicaciones Web con Google App Engine.</p>
+
+	<ol class="rounded-list">
+		<li><a href="/persona01.jsp">Agregar persona 01 (persona01.jsp)</a></li>
+		<li><a href="/persona02">Agregar persona 02 (Persona02Servlet.java)</a></li>
+		<li><a href="/persona03">Agregar persona 03 (Persona03Servlet.java)</a></li>
+		<li><a href="/color.jsp">Agregar color (color.jsp)</a></li>
+		<br/>
+		<li><a href="/listpersona01">Lista de personas 01 (ListPersona01.java)</a></li>
+		<li><a href="/listpersona02">Lista de personas 02 (ListPersona02.java)</a></li>
+		<li><a href="/listpersona03">Lista de personas 03 (ListPersona03.java)</a></li>
+		<li><a href="/listcolor">Lista de colores (ListColor.java)</a></li>
+		<br/>
+		<li><a href="/removeall">Borrar los objetos persistentes: Persona02, Persona03 y Color.</a></li>
+		<li><a href="/removepersona01">Borrar el objeto persistente: Persona01.</a></li>
+		<ol>
+		<li><a href="/dlince.zip">dlince.zip</a></li>
+		<li><a href="/war.zip">war.zip</a></li>
+		<li><a href="/WEB-INF.zip">WEB-INF.zip</a></li>
+		</ol>
+	</ol>
+<ul class="descripcion">
+    	<li>Descripción:
+    		<ul>
+    			<li>En este ejemplo se muestran los tipos de relaciones entre objetos (uno-a-uno y uno-a-muchos).
+    			<li>Una persona puede tener un color. (Persona02-Color)
+    			<li>Una persona puede tener varios colores. (Persona03-Color)
+    			<li style="list-style-type: none;"><img src="/EjeJDO01.PNG" />
+    		</ul>
+    		<li>Arquitectura y Plataforma de desarrollo:
+	    	<ul>
+	    		<li>Linux dell 3.19.0-16-generic #16-Ubuntu SMP Thu Apr 30 16:13:00 UTC 2015 i686 i686 i686 GNU/Linux
+	    		<li>Eclipse Java EE IDE for Web Developers. Version: Luna Service Release 2 (4.4.2) Build id: 20150219-0600
+	    		<li>Google Plugin para Eclipse Luna
+	    		<li>App Engine Java SDK 1.9.19
+	    	</ul>
+	    <li>Para que este ejemplo pueda publicarse en el hosting de Google App Engine, usando <code>Deploy to App Engine...</code>, se recomienda:
+	    	<ul>
+	    		<li>Utilizar como la versión 1.7 del compilador java (La versión 1.8 no esta soportada hasta este momento)
+	    		<li>Edite el archivo <code>eclipse/eclipse.ini</code> y agregar antes de <code>-product</code>, la ruta de la máquina virtual (vm) java. Ejemplo:<br/>
+	    		<code>-vm</code><br/>
+	    		<code>/usr/lib/jvm/java-1.7.0-openjdk-i386/bin/java</code>
+	    		<li>Reiniciar Eclipse y despues utilice <code>Deploy to App Engine...</code>
+	    	</ul>
+	    <li>Referencias:
+	    	<ul>
+	    		<li><a href="http://www.ubuntu.com/">http://www.ubuntu.com/</a>
+	    		<li><a href="https://eclipse.org/">https://eclipse.org/</a>
+	    		<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>
+	    		<li><a href="https://developers.google.com/eclipse/docs/install-eclipse-4.4">https://developers.google.com/eclipse/docs/install-eclipse-4.4</a>
+	    		<li><a href="https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Java">https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Java</a>
+	    	</ul>		
+    </ul>
+<div id="enlaces">
+<ul>
+		<li><a href="http://validator.w3.org/">Validador HTML.</a></li>
+		<li><a href="https://jigsaw.w3.org/css-validator/">Validador CSS.</a></li>
+		<li><a href="http://www.tawdis.net/">Evaluación de Accesibilidad.</a></li>
+	</ul>
+</div>
+<div id="pie">
+
+<!-- Firma y fecha de la página, ¡sólo por cortesía! -->
+<address>Creada el 10 de Junio de 2015<br>
+  por rescobedo.</address>
+</div>
+<p>
+<a href="http://validator.w3.org/check?uri=referer">
+<img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88">
+</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+<img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" />
+</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+<img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="¡CSS Válido!" />
+</a>
+</p>
+</body>
+</html>

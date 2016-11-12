@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Lab02_70391273</servlet-name>
+		<servlet-class>ulasalle.Lab02_70391273Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Lab02_70391273</servlet-name>
+		<url-pattern>/lab02_70391273</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>primero</servlet-name>
+		<servlet-class>ulasalle.Primero</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>primero</servlet-name>
+		<url-pattern>/primero</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>segundo</servlet-name>
+		<servlet-class>ulasalle.Segundo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>segundo</servlet-name>
+		<url-pattern>/segundo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>tercero</servlet-name>
+		<servlet-class>ulasalle.Tercero</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>tercero</servlet-name>
+		<url-pattern>/tercero</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>cuarto</servlet-name>
+		<servlet-class>ulasalle.Cuarto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cuarto</servlet-name>
+		<url-pattern>/cuarto</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
