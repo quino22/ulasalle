@@ -1,0 +1,7 @@
+package ulasalle;
+
+import javax.servlet.http.*;
+
+public class ListCurso extends HttpServlet {
+
+}

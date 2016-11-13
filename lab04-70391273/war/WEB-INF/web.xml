@@ -4,115 +4,34 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
-	
+
 	<servlet>
-		<servlet-name>SavePersona01</servlet-name>
-		<servlet-class>dlince.SavePersona01</servlet-class>
+		<servlet-name>Lab04_70391273</servlet-name>
+		<servlet-class>ulasalle.Lab04_70391273Servlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>SavePersona01</servlet-name>
-		<url-pattern>/savepersona01</url-pattern>
+		<servlet-name>Lab04_70391273</servlet-name>
+		<url-pattern>/lab04_70391273</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>SavePersona02</servlet-name>
-		<servlet-class>dlince.SavePersona02</servlet-class>
+		<servlet-name>SaveCurso</servlet-name>
+		<servlet-class>ulasalle.SaveCurso</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>SavePersona02</servlet-name>
-		<url-pattern>/savepersona02</url-pattern>
+		<servlet-name>SaveCurso</servlet-name>
+		<url-pattern>/savecurso</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-		<servlet-name>SavePersona03</servlet-name>
-		<servlet-class>dlince.SavePersona03</servlet-class>
+		<servlet-name>ListCurso</servlet-name>
+		<servlet-class>ulasalle.ListCurso</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>SavePersona03</servlet-name>
-		<url-pattern>/savepersona03</url-pattern>
+		<servlet-name>ListCurso</servlet-name>
+		<url-pattern>/listcurso</url-pattern>
 	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>SaveColor</servlet-name>
-		<servlet-class>dlince.SaveColor</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>SaveColor</servlet-name>
-		<url-pattern>/savecolor</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>RemoveAll</servlet-name>
-		<servlet-class>dlince.RemoveAll</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>RemoveAll</servlet-name>
-		<url-pattern>/removeall</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>RemovePersona01</servlet-name>
-		<servlet-class>dlince.RemovePersona01</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>RemovePersona01</servlet-name>
-		<url-pattern>/removepersona01</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>Persona02Servlet</servlet-name>
-		<servlet-class>dlince.Persona02Servlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Persona02Servlet</servlet-name>
-		<url-pattern>/persona02</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>Persona03Servlet</servlet-name>
-		<servlet-class>dlince.Persona03Servlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Persona03Servlet</servlet-name>
-		<url-pattern>/persona03</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-      <servlet-name>ListPersona01</servlet-name>
-      <servlet-class>dlince.ListPersona01</servlet-class>
-   </servlet>
-   <servlet-mapping>
-      <servlet-name>ListPersona01</servlet-name>
-      <url-pattern>/listpersona01</url-pattern>
-   </servlet-mapping>
-   
-   <servlet>
-      <servlet-name>ListPersona02</servlet-name>
-      <servlet-class>dlince.ListPersona02</servlet-class>
-   </servlet>
-   <servlet-mapping>
-      <servlet-name>ListPersona02</servlet-name>
-      <url-pattern>/listpersona02</url-pattern>
-   </servlet-mapping>
-   
-   <servlet>
-      <servlet-name>ListPersona03</servlet-name>
-      <servlet-class>dlince.ListPersona03</servlet-class>
-   </servlet>
-   <servlet-mapping>
-      <servlet-name>ListPersona03</servlet-name>
-      <url-pattern>/listpersona03</url-pattern>
-   </servlet-mapping>
-   
-   <servlet>
-      <servlet-name>ListColor</servlet-name>
-      <servlet-class>dlince.ListColor</servlet-class>
-   </servlet>
-   <servlet-mapping>
-      <servlet-name>ListColor</servlet-name>
-      <url-pattern>/listcolor</url-pattern>
-   </servlet-mapping>
-	
+
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>

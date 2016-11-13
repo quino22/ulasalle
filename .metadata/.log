@@ -13451,3 +13451,622 @@ Navigate to the console view for "Datanucleus Enhancer" for more information
 !ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 16:55:08.147
 !MESSAGE Datanucleus enhancer terminated with exit code 1.
 Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.gwt.eclipse.core 2 0 2016-11-12 17:48:42.967
+!MESSAGE GWT SDK not found
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 17:48:50.106
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY org.eclipse.jface 2 0 2016-11-12 19:09:30.543
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:761)
+	at org.eclipse.jface.viewers.AbstractTableViewer.replace(AbstractTableViewer.java:1003)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$ContentProvider.updateElement(FilteredItemsSelectionDialog.java:2795)
+	at org.eclipse.jface.viewers.AbstractTableViewer$VirtualManager.lambda$0(AbstractTableViewer.java:82)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1349)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:270)
+	at org.eclipse.swt.widgets.Table.cellDataProc(Table.java:209)
+	at org.eclipse.swt.widgets.Display.cellDataProc(Display.java:809)
+	at org.eclipse.swt.internal.gtk.OS._gtk_list_store_set(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_list_store_set(OS.java:9413)
+	at org.eclipse.swt.widgets.TableItem.setText(TableItem.java:1302)
+	at org.eclipse.jface.viewers.TableViewerRow.setText(TableViewerRow.java:114)
+	at org.eclipse.jface.viewers.ViewerCell.setText(ViewerCell.java:159)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$ItemsListLabelProvider.update(FilteredItemsSelectionDialog.java:1676)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:141)
+	at org.eclipse.jface.viewers.AbstractTableViewer.doUpdateItem(AbstractTableViewer.java:382)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:474)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at org.eclipse.jface.viewers.StructuredViewer.refreshItem(StructuredViewer.java:1559)
+	at org.eclipse.jface.viewers.AbstractTableViewer.replace(AbstractTableViewer.java:1006)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$ContentProvider.updateElement(FilteredItemsSelectionDialog.java:2795)
+	at org.eclipse.jface.viewers.AbstractTableViewer.getVirtualSelection(AbstractTableViewer.java:486)
+	at org.eclipse.jface.viewers.AbstractTableViewer.getSelectionFromWidget(AbstractTableViewer.java:457)
+	at org.eclipse.jface.viewers.StructuredViewer.getSelection(StructuredViewer.java:1041)
+	at org.eclipse.jface.viewers.StructuredViewer.handleSelect(StructuredViewer.java:1229)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetSelected(StructuredViewer.java:1258)
+	at org.eclipse.jface.util.OpenStrategy.fireSelectionEvent(OpenStrategy.java:242)
+	at org.eclipse.jface.util.OpenStrategy.access$4(OpenStrategy.java:236)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:405)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1349)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1134)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog.refresh(FilteredItemsSelectionDialog.java:968)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$RefreshJob.runInUIThread(FilteredItemsSelectionDialog.java:1393)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4528)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4146)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog.open(FilteredTypesSelectionDialog.java:471)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage.chooseSuperClass(NewTypeWizardPage.java:2032)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage.typePageChangeControlPressed(NewTypeWizardPage.java:1095)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage.access$0(NewTypeWizardPage.java:1083)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage$TypeFieldsAdapter.changeControlPressed(NewTypeWizardPage.java:1037)
+	at org.eclipse.jdt.internal.ui.wizards.dialogfields.StringButtonDialogField.changeControlPressed(StringButtonDialogField.java:56)
+	at org.eclipse.jdt.internal.ui.wizards.dialogfields.StringButtonDialogField$1.widgetSelected(StringButtonDialogField.java:117)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4553)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4143)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:133)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4553)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4143)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:09:49.589
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:10:18.694
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:10:29.714
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:10:34.528
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:10:35.870
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:10:50.979
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:11:03.913
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:11:20.851
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:11:58.230
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:12:55.977
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:13:04.901
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:13:50.040
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:13:56.186
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:14:24.566
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:14:26.824
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:14:50.744
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:15:37.575
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:15:45.911
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:15:49.454
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:15:55.190
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:16:02.061
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:16:07.945
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:16:58.706
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:17:01.645
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:17:21.781
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:17:38.407
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:17:44.944
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:17:55.589
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:18:10.038
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:18:43.107
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:18:44.444
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:18:56.850
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:19:02.155
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:19:16.013
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:19:37.345
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:21:08.138
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:21:13.915
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:21:52.246
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:22:56.096
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:23:08.466
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:23:19.633
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:23:29.167
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:23:32.019
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:23:40.227
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:24:14.599
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:24:18.087
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:24:30.884
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:24:33.817
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:25:07.166
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:25:50.623
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:26:28.356
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 2 0 2016-11-12 19:26:36.278
+!MESSAGE Could not find Java source for class file /lab04-70391273/war/WEB-INF/classes/ulasalle/SaveColor.class
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:26:36.558
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:26:42.908
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY org.eclipse.jface 2 0 2016-11-12 19:27:18.180
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:761)
+	at org.eclipse.jface.viewers.AbstractTableViewer.replace(AbstractTableViewer.java:1003)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$ContentProvider.updateElement(FilteredItemsSelectionDialog.java:2795)
+	at org.eclipse.jface.viewers.AbstractTableViewer$VirtualManager.lambda$0(AbstractTableViewer.java:82)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1349)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:270)
+	at org.eclipse.swt.widgets.Table.cellDataProc(Table.java:209)
+	at org.eclipse.swt.widgets.Display.cellDataProc(Display.java:809)
+	at org.eclipse.swt.internal.gtk.OS._gtk_list_store_set(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_list_store_set(OS.java:9413)
+	at org.eclipse.swt.widgets.TableItem.setText(TableItem.java:1302)
+	at org.eclipse.jface.viewers.TableViewerRow.setText(TableViewerRow.java:114)
+	at org.eclipse.jface.viewers.ViewerCell.setText(ViewerCell.java:159)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$ItemsListLabelProvider.update(FilteredItemsSelectionDialog.java:1676)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:141)
+	at org.eclipse.jface.viewers.AbstractTableViewer.doUpdateItem(AbstractTableViewer.java:382)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:474)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at org.eclipse.jface.viewers.StructuredViewer.refreshItem(StructuredViewer.java:1559)
+	at org.eclipse.jface.viewers.AbstractTableViewer.replace(AbstractTableViewer.java:1006)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$ContentProvider.updateElement(FilteredItemsSelectionDialog.java:2795)
+	at org.eclipse.jface.viewers.AbstractTableViewer.getVirtualSelection(AbstractTableViewer.java:486)
+	at org.eclipse.jface.viewers.AbstractTableViewer.getSelectionFromWidget(AbstractTableViewer.java:457)
+	at org.eclipse.jface.viewers.StructuredViewer.getSelection(StructuredViewer.java:1041)
+	at org.eclipse.jface.viewers.StructuredViewer.handleSelect(StructuredViewer.java:1229)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetSelected(StructuredViewer.java:1258)
+	at org.eclipse.jface.util.OpenStrategy.fireSelectionEvent(OpenStrategy.java:242)
+	at org.eclipse.jface.util.OpenStrategy.access$4(OpenStrategy.java:236)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:405)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1349)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1134)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog.refresh(FilteredItemsSelectionDialog.java:968)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$RefreshJob.runInUIThread(FilteredItemsSelectionDialog.java:1393)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4528)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4146)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog.open(FilteredTypesSelectionDialog.java:471)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage.chooseSuperClass(NewTypeWizardPage.java:2032)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage.typePageChangeControlPressed(NewTypeWizardPage.java:1095)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage.access$0(NewTypeWizardPage.java:1083)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage$TypeFieldsAdapter.changeControlPressed(NewTypeWizardPage.java:1037)
+	at org.eclipse.jdt.internal.ui.wizards.dialogfields.StringButtonDialogField.changeControlPressed(StringButtonDialogField.java:56)
+	at org.eclipse.jdt.internal.ui.wizards.dialogfields.StringButtonDialogField$1.widgetSelected(StringButtonDialogField.java:117)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4553)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4143)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:133)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4553)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4143)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:27:37.536
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:27:47.268
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:28:44.296
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:28:57.028
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:29:05.254
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:30:56.068
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:31:02.435
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:35:09.336
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:35:13.549
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:35:29.948
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 2 0 2016-11-12 19:36:06.798
+!MESSAGE Could not find Java source for class file /lab04-70391273/war/WEB-INF/classes/ulasalle/ListColor.class
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:36:07.118
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:36:12.912
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:36:18.193
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:36:22.630
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:36:28.462
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:36:43.926
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:36:56.406
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:37:00.994
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:37:06.661
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:37:10.772
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:37:18.660
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:37:26.265
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:53:18.453
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:54:02.741
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:54:07.575
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:54:23.810
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:54:30.815
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:54:52.697
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 19:55:02.143
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:01:56.707
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:05:20.389
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:08:40.509
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:08:44.245
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:10:18.603
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:10:38.168
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:11:42.490
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:12:14.433
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:12:22.285
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:12:23.629
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:12:41.228
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:12:49.663
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:13:09.343
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:14:23.546
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:14:51.639
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:18:31.541
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:18:35.209
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:36:18.812
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-11-12 20:37:05.810
+!MESSAGE Datanucleus enhancer terminated with exit code 1.
+Navigate to the console view for "Datanucleus Enhancer" for more information
